@@ -1,0 +1,18 @@
+{
+  "name": "eleventy-little",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "eleventy --serve --quiet",
+    "start": "dev",
+    "build": "eleventy"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0-beta.8",
+    "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.3",
+    "jsdom": "^19.0.0",
+    "prettier": "^2.5.1"
+  }
+}

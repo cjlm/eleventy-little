@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Lato&display=swap');
+
+@font-face {
+  src: url('../styles/fonts/RoslindaleDisplayWide-Bold.woff2') format('woff2'),
+    url('../styles/fonts/RoslindaleDisplayWide-Bold.woff') format('woff');
+  font-family: 'Roslindale Display Wide Web';
+}

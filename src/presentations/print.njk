@@ -1,0 +1,10 @@
+---
+layout: print.njk
+pagination:
+  data: collections.presentations
+  size: 1
+  alias: presentation
+permalink: "/presentations/{{ presentation.data.page.fileSlug }}/print.html"
+---
+
+{{ presentation.templateContent  | safe }}

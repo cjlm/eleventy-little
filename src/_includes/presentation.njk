@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+
+    <style>
+      :root {
+        --header-font: "{{ headerFont }}";
+      }
+    </style>
+
+    <link rel="stylesheet" href="{{ '/assets/styles/little.css' }}" />
+    <link rel="stylesheet" href="{{ '/assets/styles/code.css' }}" /> 
+
+    {% set themeUrl = ["../../assets/themes/", theme, ".css"] | join  %}
+
+    <link rel="stylesheet" href="{{ themeUrl | url }}" />
+  </head>
+  <body>
+    {{ content  |  safe }}
+  </body>
+  <script src="{{ '../../assets/scripts/little.js' | url }}"></script>
+</html>
