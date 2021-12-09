@@ -1,6 +1,5 @@
 const jsdom = require('jsdom');
 const { JSDOM } = jsdom;
-const prettier = require('prettier');
 
 module.exports = function (content) {
   function createElement(document, type, className = '') {
@@ -76,10 +75,6 @@ module.exports = function (content) {
     }
   }
 
-  return prettier.format(
-    `<!doctype html>${document.documentElement.outerHTML}`,
-    {
-      parser: 'html',
-    }
-  );
+  return;
+  `<!doctype html>${document.documentElement.outerHTML}`;
 };
