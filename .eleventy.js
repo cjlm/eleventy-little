@@ -15,7 +15,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(syntaxHighlighting, { templateFormats: 'md' });
   eleventyConfig.addPlugin(inclusiveLangPlugin);
 
-  eleventyConfig.addShortcode('screenshot', screenshotShortcode);
+  eleventyConfig.addNunjucksAsyncShortcode('screenshot', screenshotShortcode);
   eleventyConfig.addNunjucksAsyncShortcode('fonts', fontsShortcode);
 
   eleventyConfig.addTransform('slide', slideTransform);

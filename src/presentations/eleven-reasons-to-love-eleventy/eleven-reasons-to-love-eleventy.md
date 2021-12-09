@@ -1,7 +1,7 @@
 ---
 title: 'Eleven Reasons to Love Eleventy'
 theme: 'eleven'
-headerFont: 'Roslindale Display Wide Web'
+headerFont: 'Roboto Slab'
 ---
 
 ![](images/titlepage.png)
@@ -333,4 +333,4 @@ No page bloat, no JS on the client side -->
 
 ⁂ @cjlmiles
 
-⁂ sourcetarget.email
+<p class="nowrap">⁂ sourcetarget.email</p>
