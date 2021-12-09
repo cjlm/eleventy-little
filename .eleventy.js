@@ -4,6 +4,7 @@ const syntaxHighlighting = require('@11ty/eleventy-plugin-syntaxhighlight');
 const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
 
 const screenshotShortcode = require('./src/_includes/shortcodes/screenshot');
+const fontsShortcode = require('./src/_includes/shortcodes/fonts');
 const slideTransform = require('./src/_includes/transforms/slide');
 
 module.exports = (eleventyConfig) => {
@@ -15,6 +16,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(inclusiveLangPlugin);
 
   eleventyConfig.addShortcode('screenshot', screenshotShortcode);
+  eleventyConfig.addNunjucksAsyncShortcode('fonts', fontsShortcode);
 
   eleventyConfig.addTransform('slide', slideTransform);
 

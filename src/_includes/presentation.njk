@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{title}}</title>
 
-    <style>
-      :root {
-        --header-font: "{{ headerFont }}";
-      }
-    </style>
+    {% if headerFont %}
+      <style>
+        :root {
+          --header-font: "{{ headerFont }}";
+        }
+      </style>
+  
+      {% fonts headerFont %}
+    {% endif %}
 
-    <link rel="stylesheet" href="{{ '/assets/styles/little.css' }}" />
-    <link rel="stylesheet" href="{{ '/assets/styles/code.css' }}" /> 
+    <link rel="stylesheet" href="{{ '/assets/styles/little.css' | url }}" />
+    <link rel="stylesheet" href="{{ '/assets/styles/code.css'  | url }}" /> 
 
-    {% set themeUrl = ["../../assets/themes/", theme, ".css"] | join  %}
+    {% if themeUrl %}
+      {% set themeUrl = ["../../assets/themes/", theme, ".css"] | join  %}
+    {% endif %}
 
     <link rel="stylesheet" href="{{ themeUrl | url }}" />
   </head>
