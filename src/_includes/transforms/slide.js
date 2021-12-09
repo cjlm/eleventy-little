@@ -75,6 +75,5 @@ module.exports = function (content) {
     }
   }
 
-  return;
-  `<!doctype html>${document.documentElement.outerHTML}`;
+  return `<!doctype html>${document.documentElement.outerHTML}`;
 };
