@@ -2,8 +2,7 @@
   "name": "eleventy-little",
   "version": "0.0.1",
   "scripts": {
-    "dev": "eleventy --serve --quiet",
-    "start": "dev",
+    "start": "eleventy --serve --quiet",
     "build": "eleventy"
   },
   "license": "MIT",

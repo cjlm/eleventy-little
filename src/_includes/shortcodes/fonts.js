@@ -16,9 +16,9 @@ module.exports = async (fontName) => {
       const result = await instance.download(
         `https://fonts.googleapis.com/css2?family=${fontName}`
       );
-
-      return `<link rel="stylesheet" href="/assets/fonts/${cssFile}" /> `;
+      
     }
+    return `<link rel="stylesheet" href="/assets/fonts/${cssFile}" />`;
   } catch (err) {
     console.error(err);
   }

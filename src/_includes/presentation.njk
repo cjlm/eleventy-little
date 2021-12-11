@@ -20,9 +20,9 @@
 
     {% if themeUrl %}
       {% set themeUrl = ["../../assets/themes/", theme, ".css"] | join  %}
+      <link rel="stylesheet" href="{{ themeUrl | url }}" />
     {% endif %}
 
-    <link rel="stylesheet" href="{{ themeUrl | url }}" />
   </head>
   <body>
     {{ content  |  safe }}
